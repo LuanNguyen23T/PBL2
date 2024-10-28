@@ -180,9 +180,11 @@ void working()
     cout << "Dịch vụ đã chọn: ";
 
     int print = 0;
-    for(int i = 1; i < 8; i++)
-        if(chosenService[i])
+    for(int i = 7; i > 0; i--)
+        if(chosenService[i]){
             print = i;
+            break;
+        }
 
     for(int i = 1; i < 8; i++){
         if(chosenService[i]){
